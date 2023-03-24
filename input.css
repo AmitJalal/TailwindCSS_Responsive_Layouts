@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply font-extrabold text-lg flex-1 bg-yellow-500 px-4 py-2 text-center;
+  }
+}
+
+@layer utilities {
+  .article {
+    @apply p-4 bg-white flex flex-col justify-center items-center;
+  }
+  .img {
+    @apply object-cover object-center w-full h-full;
+  }
+  .heading-bold {
+    @apply font-bold drop-shadow-2xl shadow-black;
+  }
+  .card-sm {
+    @apply w-24 h-24 bg-cover bg-center;
+  }
+  .card-bold {
+    @apply font-bold mb-4
+  }
+}
